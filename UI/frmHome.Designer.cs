@@ -570,7 +570,6 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(778, 39);
             this.txtSearch.TabIndex = 12;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // pictureBoxClose
             // 
@@ -634,8 +633,7 @@
             this.Name = "frmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
-            this.Activated += new System.EventHandler(this.frmHome_Activated);
-            this.Load += new System.EventHandler(this.frmHome_Load);
+            
             this.menuStripTop.ResumeLayout(false);
             this.menuStripTop.PerformLayout();
             this.panelFooter.ResumeLayout(false);

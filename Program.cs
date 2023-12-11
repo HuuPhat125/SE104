@@ -1,12 +1,13 @@
-﻿using System;
+﻿using BloodBankManagementSystem.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BloodBank_App
+namespace BloodBankManagementSystem
 {
-    internal static class Program
+    static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +17,7 @@ namespace BloodBank_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmSplash());
         }
     }
 }
