@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -44,10 +43,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(673, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(1010, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox1.Size = new System.Drawing.Size(39, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -57,48 +56,53 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(384, 93);
+            this.lblUsername.Location = new System.Drawing.Point(554, 129);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(67, 17);
+            this.lblUsername.Size = new System.Drawing.Size(99, 28);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username";
             // 
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(387, 120);
+            this.txtUsername.Location = new System.Drawing.Point(558, 171);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(237, 29);
+            this.txtUsername.Size = new System.Drawing.Size(354, 39);
             this.txtUsername.TabIndex = 2;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(387, 197);
+            this.txtPassword.Location = new System.Drawing.Point(558, 289);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(237, 29);
+            this.txtPassword.Size = new System.Drawing.Size(354, 39);
             this.txtPassword.TabIndex = 4;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(384, 170);
+            this.lblPassword.Location = new System.Drawing.Point(554, 248);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(64, 17);
+            this.lblPassword.Size = new System.Drawing.Size(93, 28);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Password";
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLogin.Location = new System.Drawing.Point(387, 250);
+            this.btnLogin.Location = new System.Drawing.Point(558, 371);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(237, 48);
+            this.btnLogin.Size = new System.Drawing.Size(356, 74);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -108,9 +112,11 @@
             // 
             this.lblAppName.AutoSize = true;
             this.lblAppName.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppName.Location = new System.Drawing.Point(77, 197);
+            this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblAppName.Location = new System.Drawing.Point(116, 303);
+            this.lblAppName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(194, 45);
+            this.lblAppName.Size = new System.Drawing.Size(287, 65);
             this.lblAppName.TabIndex = 6;
             this.lblAppName.Text = "Blood Bank";
             // 
@@ -118,26 +124,28 @@
             // 
             this.lblAppSubName.AutoSize = true;
             this.lblAppSubName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAppSubName.Location = new System.Drawing.Point(81, 242);
+            this.lblAppSubName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblAppSubName.Location = new System.Drawing.Point(122, 372);
+            this.lblAppSubName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppSubName.Name = "lblAppSubName";
-            this.lblAppSubName.Size = new System.Drawing.Size(188, 25);
+            this.lblAppSubName.Size = new System.Drawing.Size(285, 40);
             this.lblAppSubName.TabIndex = 7;
             this.lblAppSubName.Text = "Management System";
             // 
             // pictureBoxAppIcon
             // 
-            this.pictureBoxAppIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAppIcon.Image")));
-            this.pictureBoxAppIcon.Location = new System.Drawing.Point(117, 99);
+            this.pictureBoxAppIcon.Location = new System.Drawing.Point(176, 152);
+            this.pictureBoxAppIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxAppIcon.Name = "pictureBoxAppIcon";
-            this.pictureBoxAppIcon.Size = new System.Drawing.Size(118, 88);
+            this.pictureBoxAppIcon.Size = new System.Drawing.Size(177, 135);
             this.pictureBoxAppIcon.TabIndex = 8;
             this.pictureBoxAppIcon.TabStop = false;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 382);
+            this.ClientSize = new System.Drawing.Size(1066, 588);
             this.Controls.Add(this.pictureBoxAppIcon);
             this.Controls.Add(this.lblAppSubName);
             this.Controls.Add(this.lblAppName);
@@ -148,6 +156,7 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";

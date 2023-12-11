@@ -192,7 +192,7 @@
             // 
             this.lblOpositiveCount.AutoSize = true;
             this.lblOpositiveCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOpositiveCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblOpositiveCount.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblOpositiveCount.Location = new System.Drawing.Point(160, 17);
             this.lblOpositiveCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOpositiveCount.Name = "lblOpositiveCount";
@@ -239,7 +239,7 @@
             // 
             this.lblOnegativeCount.AutoSize = true;
             this.lblOnegativeCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOnegativeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblOnegativeCount.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblOnegativeCount.Location = new System.Drawing.Point(160, 17);
             this.lblOnegativeCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOnegativeCount.Name = "lblOnegativeCount";
@@ -286,7 +286,7 @@
             // 
             this.lblAnegativeCount.AutoSize = true;
             this.lblAnegativeCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnegativeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblAnegativeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblAnegativeCount.Location = new System.Drawing.Point(160, 17);
             this.lblAnegativeCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAnegativeCount.Name = "lblAnegativeCount";
@@ -333,7 +333,7 @@
             // 
             this.lblApositiveCount.AutoSize = true;
             this.lblApositiveCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApositiveCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblApositiveCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblApositiveCount.Location = new System.Drawing.Point(160, 17);
             this.lblApositiveCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApositiveCount.Name = "lblApositiveCount";
@@ -380,7 +380,7 @@
             // 
             this.lblABnegativeCount.AutoSize = true;
             this.lblABnegativeCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblABnegativeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblABnegativeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblABnegativeCount.Location = new System.Drawing.Point(160, 17);
             this.lblABnegativeCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblABnegativeCount.Name = "lblABnegativeCount";
@@ -427,7 +427,7 @@
             // 
             this.lblABpositiveCount.AutoSize = true;
             this.lblABpositiveCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblABpositiveCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblABpositiveCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblABpositiveCount.Location = new System.Drawing.Point(160, 17);
             this.lblABpositiveCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblABpositiveCount.Name = "lblABpositiveCount";
@@ -474,7 +474,7 @@
             // 
             this.lblBnegativeCount.AutoSize = true;
             this.lblBnegativeCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBnegativeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblBnegativeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblBnegativeCount.Location = new System.Drawing.Point(160, 17);
             this.lblBnegativeCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBnegativeCount.Name = "lblBnegativeCount";
@@ -521,7 +521,7 @@
             // 
             this.lblBpositiveCount.AutoSize = true;
             this.lblBpositiveCount.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBpositiveCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
+            this.lblBpositiveCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblBpositiveCount.Location = new System.Drawing.Point(160, 17);
             this.lblBpositiveCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBpositiveCount.Name = "lblBpositiveCount";
@@ -544,11 +544,11 @@
             // dgvDonors
             // 
             this.dgvDonors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDonors.Location = new System.Drawing.Point(728, 202);
+            this.dgvDonors.Location = new System.Drawing.Point(728, 189);
             this.dgvDonors.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDonors.Name = "dgvDonors";
             this.dgvDonors.RowHeadersWidth = 62;
-            this.dgvDonors.Size = new System.Drawing.Size(944, 623);
+            this.dgvDonors.Size = new System.Drawing.Size(944, 636);
             this.dgvDonors.TabIndex = 10;
             // 
             // lblSearch
@@ -565,17 +565,17 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(914, 125);
+            this.txtSearch.Location = new System.Drawing.Point(892, 125);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(756, 39);
+            this.txtSearch.Size = new System.Drawing.Size(778, 39);
             this.txtSearch.TabIndex = 12;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxClose.Location = new System.Drawing.Point(1646, 9);
+            this.pictureBoxClose.Location = new System.Drawing.Point(1562, 17);
             this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(46, 45);
@@ -587,7 +587,7 @@
             // lblUserTitle
             // 
             this.lblUserTitle.AutoSize = true;
-            this.lblUserTitle.Location = new System.Drawing.Point(21, 78);
+            this.lblUserTitle.Location = new System.Drawing.Point(1496, 85);
             this.lblUserTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserTitle.Name = "lblUserTitle";
             this.lblUserTitle.Size = new System.Drawing.Size(112, 20);
@@ -599,7 +599,7 @@
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblUser.Location = new System.Drawing.Point(144, 78);
+            this.lblUser.Location = new System.Drawing.Point(1619, 85);
             this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(14, 20);
