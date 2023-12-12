@@ -122,7 +122,12 @@ namespace BloodBankManagementSystem.UI
             if (imageName != "no-image.jpg")
             {
                 //Path to Destination Folder
-                string imagePath = paths + "\\images\\" + imageName;
+                //string imagePath = paths + "\\images\\" + imageName;
+                //Diplay in Picture Box
+                //pictureBoxProfilePicture.Image = new Bitmap(imagePath);
+
+                //Path to Destination Folder
+                string imagePath = paths + "\\images\\no-image.jpg";
                 //Diplay in Picture Box
                 pictureBoxProfilePicture.Image = new Bitmap(imagePath);
             }

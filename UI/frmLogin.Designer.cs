@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -37,20 +36,10 @@
             this.lblAppName = new System.Windows.Forms.Label();
             this.lblAppSubName = new System.Windows.Forms.Label();
             this.pictureBoxAppIcon = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAppIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(1010, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblUsername
             // 
@@ -134,6 +123,7 @@
             // 
             // pictureBoxAppIcon
             // 
+            this.pictureBoxAppIcon.Image = global::BloodBank_App.Properties.Resources.Blood_Bank_MS_364;
             this.pictureBoxAppIcon.Location = new System.Drawing.Point(176, 152);
             this.pictureBoxAppIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxAppIcon.Name = "pictureBoxAppIcon";
@@ -141,11 +131,24 @@
             this.pictureBoxAppIcon.TabIndex = 8;
             this.pictureBoxAppIcon.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BloodBank_App.Properties.Resources.Blood_Bank_MS_238;
+            this.pictureBox1.Location = new System.Drawing.Point(1010, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 588);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1059, 586);
             this.Controls.Add(this.pictureBoxAppIcon);
             this.Controls.Add(this.lblAppSubName);
             this.Controls.Add(this.lblAppName);
@@ -155,13 +158,12 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAppIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

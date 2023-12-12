@@ -117,47 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Blood_Bank_MS_238" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blood_Bank_MS_2381.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_340" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_340.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_364" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blood_Bank_MS_3641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_3641" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_364.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_574" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_574.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_603" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_603.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_65.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_895" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_895.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_icons8_drop_of_blood_96af905f8c_372b_4e8d_9e2b_9b33f86ecf84" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_icons8-drop-of-blood-96af905f8c-372b-4e8d-9e2b-9b33f86ecf84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_Vijay_Thapa337a7dd1_6fb1_457f_a480_743c33aa62bf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_Vijay-Thapa337a7dd1-6fb1-457f-a480-743c33aa62bf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_Vijay_Thapa79e7c6c8_5719_4d42_86b4_09ebb19e285c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_Vijay-Thapa79e7c6c8-5719-4d42-86b4-09ebb19e285c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_Vijay_Thapa9a162acd_d63b_4f5d_a54b_46c3272c991a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_Vijay-Thapa9a162acd-d63b-4f5d-a54b-46c3272c991a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blood_Bank_MS_Vijay_Thapab1de6d42_23ac_4a89_98f0_5c6fcd3f86ce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Blood_Bank_MS_Vijay-Thapab1de6d42-23ac-4a89-98f0-5c6fcd3f86ce.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="no_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\no-image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="timerSplash.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

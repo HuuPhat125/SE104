@@ -94,12 +94,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\frmDonors.resx">
+      <DependentUpon>frmDonors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
@@ -116,6 +123,55 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Blood_Bank_MS_603.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blood_Bank_MS_2381.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blood_Bank_MS_3641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBoxClose.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\no-image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_65.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_340.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_364.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_574.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_603.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_895.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_icons8-drop-of-blood-96af905f8c-372b-4e8d-9e2b-9b33f86ecf84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_Vijay-Thapa9a162acd-d63b-4f5d-a54b-46c3272c991a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_Vijay-Thapa79e7c6c8-5719-4d42-86b4-09ebb19e285c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_Vijay-Thapa337a7dd1-6fb1-457f-a480-743c33aa62bf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Blood_Bank_MS_Vijay-Thapab1de6d42-23ac-4a89-98f0-5c6fcd3f86ce.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

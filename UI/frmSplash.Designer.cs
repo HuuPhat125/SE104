@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblSubTitle = new System.Windows.Forms.Label();
@@ -42,10 +41,10 @@
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(122, 96);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(166, 125);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(100, 98);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(150, 151);
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
             // 
@@ -53,9 +52,10 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(271, 96);
+            this.lblTitle.Location = new System.Drawing.Point(406, 148);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(260, 50);
+            this.lblTitle.Size = new System.Drawing.Size(391, 74);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "BLOOD BANK";
             // 
@@ -63,9 +63,10 @@
             // 
             this.lblSubTitle.AutoSize = true;
             this.lblSubTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubTitle.Location = new System.Drawing.Point(275, 148);
+            this.lblSubTitle.Location = new System.Drawing.Point(412, 228);
+            this.lblSubTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSubTitle.Name = "lblSubTitle";
-            this.lblSubTitle.Size = new System.Drawing.Size(242, 32);
+            this.lblSubTitle.Size = new System.Drawing.Size(352, 48);
             this.lblSubTitle.TabIndex = 2;
             this.lblSubTitle.Text = "Management System";
             // 
@@ -73,17 +74,19 @@
             // 
             this.panelBG.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelBG.Controls.Add(this.panelMovable);
-            this.panelBG.Location = new System.Drawing.Point(-1, 254);
+            this.panelBG.Location = new System.Drawing.Point(-2, 391);
+            this.panelBG.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelBG.Name = "panelBG";
-            this.panelBG.Size = new System.Drawing.Size(664, 39);
+            this.panelBG.Size = new System.Drawing.Size(996, 60);
             this.panelBG.TabIndex = 3;
             // 
             // panelMovable
             // 
             this.panelMovable.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panelMovable.Location = new System.Drawing.Point(8, 7);
+            this.panelMovable.Location = new System.Drawing.Point(12, 11);
+            this.panelMovable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMovable.Name = "panelMovable";
-            this.panelMovable.Size = new System.Drawing.Size(10, 25);
+            this.panelMovable.Size = new System.Drawing.Size(15, 38);
             this.panelMovable.TabIndex = 0;
             // 
             // timerSplash
@@ -92,15 +95,15 @@
             // 
             // frmSplash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Salmon;
-            this.ClientSize = new System.Drawing.Size(659, 356);
+            this.ClientSize = new System.Drawing.Size(988, 548);
             this.Controls.Add(this.panelBG);
             this.Controls.Add(this.lblSubTitle);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pictureBoxLogo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSplash";

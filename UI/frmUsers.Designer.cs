@@ -369,6 +369,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1650, 769);
             this.Controls.Add(this.txtSearch);
@@ -396,7 +397,6 @@
             this.Controls.Add(this.pictureBoxProfilePicture);
             this.Controls.Add(this.lblProfilePicture);
             this.Controls.Add(this.panelTop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmUsers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

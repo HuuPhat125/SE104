@@ -8,11 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BloodBankManagementSystem.Properties
-{
+namespace BloodBank_App.Properties {
     using System;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,49 +22,181 @@ namespace BloodBankManagementSystem.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if (object.ReferenceEquals(resourceMan, null))
-                {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BloodBankManagementSystem.Properties.Resources", typeof(Resources).Assembly);
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BloodBank_App.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_238 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_238", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_340 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_340", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_364 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_364", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_3641 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_3641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_574 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_574", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_603 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_603", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_65 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_65", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_895 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_895", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_icons8_drop_of_blood_96af905f8c_372b_4e8d_9e2b_9b33f86ecf84 {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_icons8_drop_of_blood_96af905f8c_372b_4e8d_9e2b_9b33f86ecf84", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapa337a7dd1_6fb1_457f_a480_743c33aa62bf {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapa337a7dd1_6fb1_457f_a480_743c33aa62bf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapa79e7c6c8_5719_4d42_86b4_09ebb19e285c {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapa79e7c6c8_5719_4d42_86b4_09ebb19e285c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapa9a162acd_d63b_4f5d_a54b_46c3272c991a {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapa9a162acd_d63b_4f5d_a54b_46c3272c991a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapab1de6d42_23ac_4a89_98f0_5c6fcd3f86ce {
+            get {
+                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapab1de6d42_23ac_4a89_98f0_5c6fcd3f86ce", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap no_image {
+            get {
+                object obj = ResourceManager.GetObject("no_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

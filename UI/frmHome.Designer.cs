@@ -70,9 +70,9 @@
             this.dgvDonors = new System.Windows.Forms.DataGridView();
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.lblUserTitle = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.menuStripTop.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelOpositive.SuspendLayout();
@@ -98,7 +98,7 @@
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
             this.menuStripTop.Padding = new System.Windows.Forms.Padding(9, 15, 0, 15);
-            this.menuStripTop.Size = new System.Drawing.Size(1702, 62);
+            this.menuStripTop.Size = new System.Drawing.Size(1684, 62);
             this.menuStripTop.TabIndex = 0;
             this.menuStripTop.Text = "menuStrip1";
             // 
@@ -126,7 +126,7 @@
             this.panelFooter.Location = new System.Drawing.Point(0, 875);
             this.panelFooter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(1702, 63);
+            this.panelFooter.Size = new System.Drawing.Size(1684, 63);
             this.panelFooter.TabIndex = 1;
             // 
             // lblDeveloper
@@ -544,11 +544,11 @@
             // dgvDonors
             // 
             this.dgvDonors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDonors.Location = new System.Drawing.Point(728, 189);
+            this.dgvDonors.Location = new System.Drawing.Point(676, 216);
             this.dgvDonors.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDonors.Name = "dgvDonors";
             this.dgvDonors.RowHeadersWidth = 62;
-            this.dgvDonors.Size = new System.Drawing.Size(944, 636);
+            this.dgvDonors.Size = new System.Drawing.Size(967, 616);
             this.dgvDonors.TabIndex = 10;
             // 
             // lblSearch
@@ -572,18 +572,6 @@
             this.txtSearch.TabIndex = 12;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxClose.Location = new System.Drawing.Point(1562, 17);
-            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(46, 45);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxClose.TabIndex = 13;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
-            // 
             // lblUserTitle
             // 
             this.lblUserTitle.AutoSize = true;
@@ -606,12 +594,26 @@
             this.lblUser.TabIndex = 15;
             this.lblUser.Text = ".";
             // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxClose.Image = global::BloodBank_App.Properties.Resources.Blood_Bank_MS_238;
+            this.pictureBoxClose.Location = new System.Drawing.Point(1562, 17);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(46, 45);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 13;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1702, 938);
+            this.ClientSize = new System.Drawing.Size(1684, 938);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblUserTitle);
             this.Controls.Add(this.pictureBoxClose);
@@ -628,7 +630,6 @@
             this.Controls.Add(this.panelOpositive);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.menuStripTop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStripTop;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmHome";
