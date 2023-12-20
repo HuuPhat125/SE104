@@ -24,7 +24,7 @@ namespace BloodBankManagementSystem.UI
             timerSplash.Interval = 20;
             panelMovable.Width += 5;
 
-            move += 5;
+            move += 8;
 
             //If the loading is complete then display login form and close this form
             if (move == 640)

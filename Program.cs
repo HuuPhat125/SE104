@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
 
 namespace BloodBankManagementSystem
 {
@@ -15,6 +16,7 @@ namespace BloodBankManagementSystem
         [STAThread]
         static void Main()
         {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmSplash());

@@ -17,6 +17,7 @@ namespace BloodBankManagementSystem.UI
         public frmHome()
         {
             InitializeComponent();
+
         }
 
         //Create the Object of Donor Dal

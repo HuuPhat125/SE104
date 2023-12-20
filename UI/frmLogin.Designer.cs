@@ -45,7 +45,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(554, 129);
+            this.lblUsername.Location = new System.Drawing.Point(548, 108);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(99, 28);
@@ -55,7 +55,7 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(558, 171);
+            this.txtUsername.Location = new System.Drawing.Point(552, 150);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(354, 39);
@@ -64,7 +64,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(558, 289);
+            this.txtPassword.Location = new System.Drawing.Point(552, 268);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -75,7 +75,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(554, 248);
+            this.lblPassword.Location = new System.Drawing.Point(548, 227);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(93, 28);
@@ -88,7 +88,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLogin.Location = new System.Drawing.Point(558, 371);
+            this.btnLogin.Location = new System.Drawing.Point(552, 350);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(356, 74);
@@ -123,17 +123,19 @@
             // 
             // pictureBoxAppIcon
             // 
-            this.pictureBoxAppIcon.Image = global::BloodBank_App.Properties.Resources.Blood_Bank_MS_364;
+            this.pictureBoxAppIcon.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBoxAppIcon.Image = global::BloodBank_App.Properties.Resources.logo;
             this.pictureBoxAppIcon.Location = new System.Drawing.Point(176, 152);
             this.pictureBoxAppIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxAppIcon.Name = "pictureBoxAppIcon";
             this.pictureBoxAppIcon.Size = new System.Drawing.Size(177, 135);
+            this.pictureBoxAppIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAppIcon.TabIndex = 8;
             this.pictureBoxAppIcon.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BloodBank_App.Properties.Resources.Blood_Bank_MS_238;
+            this.pictureBox1.Image = global::BloodBank_App.Properties.Resources.exit;
             this.pictureBox1.Location = new System.Drawing.Point(1010, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
@@ -148,7 +150,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1059, 586);
+            this.BackgroundImage = global::BloodBank_App.Properties.Resources.bg_login;
+            this.ClientSize = new System.Drawing.Size(1061, 618);
             this.Controls.Add(this.pictureBoxAppIcon);
             this.Controls.Add(this.lblAppSubName);
             this.Controls.Add(this.lblAppName);

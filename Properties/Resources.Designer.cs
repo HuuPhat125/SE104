@@ -63,9 +63,9 @@ namespace BloodBank_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_238 {
+        internal static System.Drawing.Bitmap background {
             get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_238", resourceCulture);
+                object obj = ResourceManager.GetObject("background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace BloodBank_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_340 {
+        internal static System.Drawing.Bitmap bg {
             get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_340", resourceCulture);
+                object obj = ResourceManager.GetObject("bg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace BloodBank_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_364 {
+        internal static System.Drawing.Bitmap bg_login {
             get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_364", resourceCulture);
+                object obj = ResourceManager.GetObject("bg_login", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace BloodBank_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_65 {
+        internal static System.Drawing.Bitmap exit {
             get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_65", resourceCulture);
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,59 +133,9 @@ namespace BloodBank_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_895 {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_895", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_icons8_drop_of_blood_96af905f8c_372b_4e8d_9e2b_9b33f86ecf84 {
-            get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_icons8_drop_of_blood_96af905f8c_372b_4e8d_9e2b_9b33f86ecf84", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapa337a7dd1_6fb1_457f_a480_743c33aa62bf {
-            get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapa337a7dd1_6fb1_457f_a480_743c33aa62bf", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapa79e7c6c8_5719_4d42_86b4_09ebb19e285c {
-            get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapa79e7c6c8_5719_4d42_86b4_09ebb19e285c", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapa9a162acd_d63b_4f5d_a54b_46c3272c991a {
-            get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapa9a162acd_d63b_4f5d_a54b_46c3272c991a", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Blood_Bank_MS_Vijay_Thapab1de6d42_23ac_4a89_98f0_5c6fcd3f86ce {
-            get {
-                object obj = ResourceManager.GetObject("Blood_Bank_MS_Vijay_Thapab1de6d42_23ac_4a89_98f0_5c6fcd3f86ce", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

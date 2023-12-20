@@ -597,7 +597,6 @@
             // pictureBoxClose
             // 
             this.pictureBoxClose.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxClose.Image = global::BloodBank_App.Properties.Resources.Blood_Bank_MS_238;
             this.pictureBoxClose.Location = new System.Drawing.Point(1562, 17);
             this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxClose.Name = "pictureBoxClose";
@@ -613,6 +612,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackgroundImage = global::BloodBank_App.Properties.Resources.bg_login;
             this.ClientSize = new System.Drawing.Size(1684, 938);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblUserTitle);
@@ -630,6 +630,7 @@
             this.Controls.Add(this.panelOpositive);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.menuStripTop);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStripTop;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmHome";
