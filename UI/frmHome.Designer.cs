@@ -73,6 +73,7 @@
             this.lblUserTitle = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+            this.reloadButtonImageBox = new System.Windows.Forms.PictureBox();
             this.menuStripTop.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelOpositive.SuspendLayout();
@@ -85,6 +86,7 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reloadButtonImageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStripTop
@@ -134,7 +136,7 @@
             this.lblDeveloper.AutoSize = true;
             this.lblDeveloper.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeveloper.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblDeveloper.Location = new System.Drawing.Point(1040, 8);
+            this.lblDeveloper.Location = new System.Drawing.Point(827, 9);
             this.lblDeveloper.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeveloper.Name = "lblDeveloper";
             this.lblDeveloper.Size = new System.Drawing.Size(185, 45);
@@ -146,7 +148,7 @@
             this.lblDevTitle.AutoSize = true;
             this.lblDevTitle.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDevTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblDevTitle.Location = new System.Drawing.Point(808, 8);
+            this.lblDevTitle.Location = new System.Drawing.Point(585, 8);
             this.lblDevTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDevTitle.Name = "lblDevTitle";
             this.lblDevTitle.Size = new System.Drawing.Size(246, 45);
@@ -158,12 +160,12 @@
             this.lblAppName.AutoSize = true;
             this.lblAppName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
-            this.lblAppName.Location = new System.Drawing.Point(321, 8);
+            this.lblAppName.Location = new System.Drawing.Point(383, 9);
             this.lblAppName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(488, 45);
+            this.lblAppName.Size = new System.Drawing.Size(180, 45);
             this.lblAppName.TabIndex = 0;
-            this.lblAppName.Text = "Blood Bank Management System";
+            this.lblAppName.Text = "Blood Bank";
             // 
             // panelOpositive
             // 
@@ -606,6 +608,17 @@
             this.pictureBoxClose.TabStop = false;
             this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
+            // reloadButtonImageBox
+            // 
+            this.reloadButtonImageBox.Image = global::BloodBank_App.Properties.Resources.reload;
+            this.reloadButtonImageBox.Location = new System.Drawing.Point(1475, 17);
+            this.reloadButtonImageBox.Name = "reloadButtonImageBox";
+            this.reloadButtonImageBox.Size = new System.Drawing.Size(46, 45);
+            this.reloadButtonImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reloadButtonImageBox.TabIndex = 16;
+            this.reloadButtonImageBox.TabStop = false;
+            this.reloadButtonImageBox.Click += new System.EventHandler(this.reloadButtonImageBox_Click);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -614,6 +627,7 @@
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImage = global::BloodBank_App.Properties.Resources.bg_login;
             this.ClientSize = new System.Drawing.Size(1684, 938);
+            this.Controls.Add(this.reloadButtonImageBox);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblUserTitle);
             this.Controls.Add(this.pictureBoxClose);
@@ -660,6 +674,7 @@
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reloadButtonImageBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -712,6 +727,7 @@
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.Label lblUserTitle;
         private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.PictureBox reloadButtonImageBox;
     }
 }
 

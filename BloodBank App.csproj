@@ -207,5 +207,8 @@
   <ItemGroup>
     <None Include="images\exit.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\reload.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,7 @@ namespace BloodBankManagementSystem.UI
 {
     public partial class frmDonors : Form
     {
+        public event EventHandler DataChanged;
         public frmDonors()
         {
             InitializeComponent();
@@ -429,5 +430,6 @@ namespace BloodBankManagementSystem.UI
                 }
             }
         }
+
     }
 }

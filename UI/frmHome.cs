@@ -95,5 +95,12 @@ namespace BloodBankManagementSystem.UI
                 dgvDonors.DataSource = dt;
             }
         }
+
+        private void reloadButtonImageBox_Click(object sender, EventArgs e)
+        {
+            //DIsplay all the Donors
+            DataTable dt = dal.Select();
+            dgvDonors.DataSource = dt;
+        }
     }
 }
