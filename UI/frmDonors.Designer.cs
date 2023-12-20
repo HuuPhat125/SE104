@@ -55,6 +55,7 @@
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.cmbBloodGroup = new System.Windows.Forms.ComboBox();
             this.lblBloodGroup = new System.Windows.Forms.Label();
+            this.selectFile = new System.Windows.Forms.Button();
             this.pictureBoxProfilePicture = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
@@ -89,10 +90,10 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(934, 85);
+            this.txtSearch.Location = new System.Drawing.Point(868, 79);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(642, 33);
+            this.txtSearch.Size = new System.Drawing.Size(766, 33);
             this.txtSearch.TabIndex = 48;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -100,7 +101,7 @@
             // 
             this.lblSearch.AutoSize = true;
             this.lblSearch.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch.Location = new System.Drawing.Point(864, 89);
+            this.lblSearch.Location = new System.Drawing.Point(798, 83);
             this.lblSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(61, 23);
@@ -110,11 +111,11 @@
             // dgvDonors
             // 
             this.dgvDonors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDonors.Location = new System.Drawing.Point(873, 148);
+            this.dgvDonors.Location = new System.Drawing.Point(805, 122);
             this.dgvDonors.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDonors.Name = "dgvDonors";
             this.dgvDonors.RowHeadersWidth = 62;
-            this.dgvDonors.Size = new System.Drawing.Size(705, 595);
+            this.dgvDonors.Size = new System.Drawing.Size(829, 595);
             this.dgvDonors.TabIndex = 46;
             this.dgvDonors.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDonors_RowHeaderMouseClick);
             // 
@@ -124,7 +125,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClear.Location = new System.Drawing.Point(616, 686);
+            this.btnClear.Location = new System.Drawing.Point(588, 680);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(170, 65);
@@ -139,7 +140,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDelete.Location = new System.Drawing.Point(438, 686);
+            this.btnDelete.Location = new System.Drawing.Point(410, 680);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(170, 65);
@@ -154,7 +155,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnUpdate.Location = new System.Drawing.Point(258, 686);
+            this.btnUpdate.Location = new System.Drawing.Point(230, 680);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(170, 65);
@@ -169,7 +170,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAdd.Location = new System.Drawing.Point(76, 686);
+            this.btnAdd.Location = new System.Drawing.Point(48, 680);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(170, 65);
@@ -181,7 +182,7 @@
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(278, 574);
+            this.txtAddress.Location = new System.Drawing.Point(197, 569);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -202,7 +203,7 @@
             // txtContact
             // 
             this.txtContact.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContact.Location = new System.Drawing.Point(278, 525);
+            this.txtContact.Location = new System.Drawing.Point(197, 520);
             this.txtContact.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtContact.MaxLength = 15;
             this.txtContact.Name = "txtContact";
@@ -223,7 +224,7 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(278, 331);
+            this.txtLastName.Location = new System.Drawing.Point(197, 326);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(506, 33);
@@ -243,7 +244,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(278, 380);
+            this.txtEmail.Location = new System.Drawing.Point(197, 375);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(506, 33);
@@ -263,7 +264,7 @@
             // txtDonorID
             // 
             this.txtDonorID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonorID.Location = new System.Drawing.Point(278, 235);
+            this.txtDonorID.Location = new System.Drawing.Point(197, 230);
             this.txtDonorID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDonorID.Name = "txtDonorID";
             this.txtDonorID.ReadOnly = true;
@@ -284,7 +285,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(278, 283);
+            this.txtFirstName.Location = new System.Drawing.Point(197, 278);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(506, 33);
@@ -305,7 +306,7 @@
             // 
             this.btnSelectImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectImage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectImage.Location = new System.Drawing.Point(438, 171);
+            this.btnSelectImage.Location = new System.Drawing.Point(357, 166);
             this.btnSelectImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSelectImage.Name = "btnSelectImage";
             this.btnSelectImage.Size = new System.Drawing.Size(174, 49);
@@ -343,7 +344,7 @@
             "Male",
             "Female",
             "Other"});
-            this.cmbGender.Location = new System.Drawing.Point(278, 429);
+            this.cmbGender.Location = new System.Drawing.Point(197, 424);
             this.cmbGender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(506, 36);
@@ -362,7 +363,7 @@
             "B-",
             "AB+",
             "AB-"});
-            this.cmbBloodGroup.Location = new System.Drawing.Point(278, 477);
+            this.cmbBloodGroup.Location = new System.Drawing.Point(197, 472);
             this.cmbBloodGroup.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbBloodGroup.Name = "cmbBloodGroup";
             this.cmbBloodGroup.Size = new System.Drawing.Size(506, 36);
@@ -378,9 +379,20 @@
             this.lblBloodGroup.TabIndex = 51;
             this.lblBloodGroup.Text = "Blood Group";
             // 
+            // selectFile
+            // 
+            this.selectFile.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.selectFile.Location = new System.Drawing.Point(559, 166);
+            this.selectFile.Name = "selectFile";
+            this.selectFile.Size = new System.Drawing.Size(146, 49);
+            this.selectFile.TabIndex = 53;
+            this.selectFile.Text = "Upload File Donors";
+            this.selectFile.UseVisualStyleBackColor = false;
+            this.selectFile.Click += new System.EventHandler(this.selectFile_Click);
+            // 
             // pictureBoxProfilePicture
             // 
-            this.pictureBoxProfilePicture.Location = new System.Drawing.Point(278, 85);
+            this.pictureBoxProfilePicture.Location = new System.Drawing.Point(197, 80);
             this.pictureBoxProfilePicture.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxProfilePicture.Name = "pictureBoxProfilePicture";
             this.pictureBoxProfilePicture.Size = new System.Drawing.Size(150, 137);
@@ -390,6 +402,7 @@
             // 
             // pictureBoxClose
             // 
+            this.pictureBoxClose.Image = global::BloodBank_App.Properties.Resources.exit;
             this.pictureBoxClose.Location = new System.Drawing.Point(1587, 9);
             this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxClose.Name = "pictureBoxClose";
@@ -403,8 +416,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BackgroundImage = global::BloodBank_App.Properties.Resources.bg_login;
             this.ClientSize = new System.Drawing.Size(1647, 776);
+            this.Controls.Add(this.selectFile);
             this.Controls.Add(this.cmbBloodGroup);
             this.Controls.Add(this.lblBloodGroup);
             this.Controls.Add(this.cmbGender);
@@ -478,5 +493,6 @@
         private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.ComboBox cmbBloodGroup;
         private System.Windows.Forms.Label lblBloodGroup;
+        private System.Windows.Forms.Button selectFile;
     }
 }

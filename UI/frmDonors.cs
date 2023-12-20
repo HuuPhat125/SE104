@@ -100,7 +100,7 @@ namespace BloodBankManagementSystem.UI
             }
             else
             {
-                //FAiled to Insert Data
+                //Failed to Insert Data
                 MessageBox.Show("Failed to Add new Donor.");
             }
         }
@@ -190,24 +190,28 @@ namespace BloodBankManagementSystem.UI
 
             //REmove the previous image
             //Check whether the donor has profile picture or not
-            if (rowHeaderImage != "no-name.jpg")
+            // Check whether the donor has a profile picture or not
+            if (rowHeaderImage != "no-image.jpg")
             {
-                //Only runs if user has image
-                //Get the Path to the root folder of the project
+                // Only runs if the user has an image
+                // Get the Path to the root folder of the project
                 string path = Application.StartupPath.Substring(0, (Application.StartupPath.Length) - 10);
 
-                //Get the Path of the image
-                string imagePath = path + "\\images\\" + rowHeaderImage;
+                // Get the Path of the image using Path.Combine
+                string imagePath = Path.Combine(path, "images", rowHeaderImage);
 
-                //Call Clear Function
+                // Call Clear Function
                 Clear();
 
-                //Call GArbage Collection
+                // Call Garbage Collection
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
 
-                //Delete the Physical image file of Donors
-                File.Delete(imagePath);
+                // Delete the Physical image file of Donors
+                if (File.Exists(imagePath))
+                {
+                    File.Delete(imagePath);
+                }
             }
 
             //If the data updated successfully then the value of isSuccess will be true else it will be false
@@ -231,50 +235,54 @@ namespace BloodBankManagementSystem.UI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            //Get the value from form
+            // Get the value from form
             d.donor_id = int.Parse(txtDonorID.Text);
 
-            //Check whether the donor has profile picture or not
-            if (rowHeaderImage != "no-name.jpg")
+            // Check whether the donor has a profile picture or not
+            if (rowHeaderImage != "no-image.jpg")
             {
-                //Only runs if user has image
-                //Get the Path to the root folder of the project
+                // Only runs if the user has an image
+                // Get the Path to the root folder of the project
                 string path = Application.StartupPath.Substring(0, (Application.StartupPath.Length) - 10);
 
-                //Get the Path of the image
-                string imagePath = path + "\\images\\" + rowHeaderImage;
+                // Get the Path of the image using Path.Combine
+                string imagePath = Path.Combine(path, "images", rowHeaderImage);
 
-                //Call Clear Function
+                // Call Clear Function
                 Clear();
 
-                //Call GArbage Collection
+                // Call Garbage Collection
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
 
-                //Delete the Physical image file of Donors
-                File.Delete(imagePath);
+                // Delete the Physical image file of Donors
+                if (File.Exists(imagePath))
+                {
+                    File.Delete(imagePath);
+                }
             }
 
-            //Create a Boolean Variable to Check whether the donor deleted or not
+            // Create a Boolean Variable to Check whether the donor deleted or not
             bool isSuccess = dal.Delete(d);
 
             if (isSuccess == true)
             {
-                //Donor Deleted Successfully
+                // Donor Deleted Successfully
                 MessageBox.Show("Donor Deleted Successfully.");
 
                 Clear();
 
-                //Refresh Datagrid View
+                // Refresh Datagrid View
                 DataTable dt = dal.Select();
                 dgvDonors.DataSource = dt;
             }
             else
             {
-                //Failed to Delete Donor
+                // Failed to Delete Donor
                 MessageBox.Show("Failed to Delete Donor");
             }
         }
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -349,6 +357,76 @@ namespace BloodBankManagementSystem.UI
                 //DIsplay all the Donors
                 DataTable dt = dal.Select();
                 dgvDonors.DataSource = dt;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectFile_Click(object sender, EventArgs e)
+        {
+            int ImportedRecord = 0, inValidItem = 0;
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = dialog.FileName;
+
+                try
+                {
+                    using (var package = new OfficeOpenXml.ExcelPackage(new FileInfo(filePath)))
+                    {
+                        // Assume the data is in the first worksheet
+                        var worksheet = package.Workbook.Worksheets[0];
+
+                        // Loop through all rows with data
+                        for (int row = worksheet.Dimension.Start.Row + 1; row <= worksheet.Dimension.End.Row; row++)
+                        {
+                            // Read data from each column
+                            d.first_name = worksheet.Cells[row, 1].Value?.ToString();
+                            d.last_name = worksheet.Cells[row, 2].Value?.ToString();
+                            d.email = worksheet.Cells[row, 3].Value?.ToString();
+                            d.gender = worksheet.Cells[row, 4].Value?.ToString();
+                            d.blood_group = worksheet.Cells[row, 5].Value?.ToString();
+                            d.contact = worksheet.Cells[row, 6].Value?.ToString();
+                            d.address = worksheet.Cells[row, 7].Value?.ToString();
+                            d.added_date = DateTime.Now;
+
+                            // Get the ID of the logged-in user
+                            string loggedInUser = frmLogin.loggedInUser;
+                            userBLL usr = udal.GetIDFromUsername(loggedInUser);
+                            d.added_by = usr.user_id;
+
+                            // Set the default image name
+                            d.image_name = "no-image.jpg";
+
+                            // Insert data into the database
+                            bool isSuccess = dal.Insert(d);
+
+                            if (isSuccess)
+                            {
+                                ImportedRecord++;
+                            }
+                            else
+                            {
+                                inValidItem++;
+                            }
+                        }
+
+                        // Display a message with the result
+                        MessageBox.Show($"Imported {ImportedRecord} records. {inValidItem} records failed to import.");
+
+                        // Refresh the DataGridView
+                        DataTable dt = dal.Select();
+                        dgvDonors.DataSource = dt;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
             }
         }
     }
