@@ -74,6 +74,7 @@
             this.lblUser = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.reloadButtonImageBox = new System.Windows.Forms.PictureBox();
+            this.exportExcelFileButton = new System.Windows.Forms.Button();
             this.menuStripTop.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelOpositive.SuspendLayout();
@@ -136,7 +137,7 @@
             this.lblDeveloper.AutoSize = true;
             this.lblDeveloper.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeveloper.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblDeveloper.Location = new System.Drawing.Point(827, 9);
+            this.lblDeveloper.Location = new System.Drawing.Point(974, 10);
             this.lblDeveloper.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeveloper.Name = "lblDeveloper";
             this.lblDeveloper.Size = new System.Drawing.Size(185, 45);
@@ -148,7 +149,7 @@
             this.lblDevTitle.AutoSize = true;
             this.lblDevTitle.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDevTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblDevTitle.Location = new System.Drawing.Point(585, 8);
+            this.lblDevTitle.Location = new System.Drawing.Point(732, 9);
             this.lblDevTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDevTitle.Name = "lblDevTitle";
             this.lblDevTitle.Size = new System.Drawing.Size(246, 45);
@@ -160,7 +161,7 @@
             this.lblAppName.AutoSize = true;
             this.lblAppName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(76)))), ((int)(((byte)(58)))));
-            this.lblAppName.Location = new System.Drawing.Point(383, 9);
+            this.lblAppName.Location = new System.Drawing.Point(530, 10);
             this.lblAppName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppName.Name = "lblAppName";
             this.lblAppName.Size = new System.Drawing.Size(180, 45);
@@ -546,18 +547,18 @@
             // dgvDonors
             // 
             this.dgvDonors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDonors.Location = new System.Drawing.Point(676, 216);
+            this.dgvDonors.Location = new System.Drawing.Point(677, 216);
             this.dgvDonors.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDonors.Name = "dgvDonors";
             this.dgvDonors.RowHeadersWidth = 62;
-            this.dgvDonors.Size = new System.Drawing.Size(967, 616);
+            this.dgvDonors.Size = new System.Drawing.Size(966, 609);
             this.dgvDonors.TabIndex = 10;
             // 
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
             this.lblSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch.Location = new System.Drawing.Point(722, 125);
+            this.lblSearch.Location = new System.Drawing.Point(722, 128);
             this.lblSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(162, 32);
@@ -577,12 +578,12 @@
             // lblUserTitle
             // 
             this.lblUserTitle.AutoSize = true;
-            this.lblUserTitle.Location = new System.Drawing.Point(1496, 85);
+            this.lblUserTitle.Location = new System.Drawing.Point(1517, 85);
             this.lblUserTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserTitle.Name = "lblUserTitle";
-            this.lblUserTitle.Size = new System.Drawing.Size(112, 20);
+            this.lblUserTitle.Size = new System.Drawing.Size(74, 20);
             this.lblUserTitle.TabIndex = 14;
-            this.lblUserTitle.Text = "Logged In As: ";
+            this.lblUserTitle.Text = "Welcom: ";
             // 
             // lblUser
             // 
@@ -619,6 +620,16 @@
             this.reloadButtonImageBox.TabStop = false;
             this.reloadButtonImageBox.Click += new System.EventHandler(this.reloadButtonImageBox_Click);
             // 
+            // exportExcelFileButton
+            // 
+            this.exportExcelFileButton.Location = new System.Drawing.Point(1350, 82);
+            this.exportExcelFileButton.Name = "exportExcelFileButton";
+            this.exportExcelFileButton.Size = new System.Drawing.Size(75, 23);
+            this.exportExcelFileButton.TabIndex = 17;
+            this.exportExcelFileButton.Text = "button1";
+            this.exportExcelFileButton.UseVisualStyleBackColor = true;
+            this.exportExcelFileButton.Click += new System.EventHandler(this.exportExcelFileButton_Click);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -627,6 +638,7 @@
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImage = global::BloodBank_App.Properties.Resources.bg_login;
             this.ClientSize = new System.Drawing.Size(1684, 938);
+            this.Controls.Add(this.exportExcelFileButton);
             this.Controls.Add(this.reloadButtonImageBox);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblUserTitle);
@@ -728,6 +740,7 @@
         private System.Windows.Forms.Label lblUserTitle;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.PictureBox reloadButtonImageBox;
+        private System.Windows.Forms.Button exportExcelFileButton;
     }
 }
 

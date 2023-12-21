@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelTop = new System.Windows.Forms.Panel();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.lblFormTitle = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
@@ -57,16 +58,15 @@
             this.lblBloodGroup = new System.Windows.Forms.Label();
             this.selectFile = new System.Windows.Forms.Button();
             this.pictureBoxProfilePicture = new System.Windows.Forms.PictureBox();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTop
             // 
-            this.panelTop.BackColor = System.Drawing.Color.Salmon;
+            this.panelTop.BackColor = System.Drawing.Color.Blue;
             this.panelTop.Controls.Add(this.pictureBoxClose);
             this.panelTop.Controls.Add(this.lblFormTitle);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -75,6 +75,18 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1647, 62);
             this.panelTop.TabIndex = 1;
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Image = global::BloodBank_App.Properties.Resources.exit;
+            this.pictureBoxClose.Location = new System.Drawing.Point(1587, 9);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(50, 48);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 1;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // lblFormTitle
             // 
@@ -186,7 +198,7 @@
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(506, 101);
+            this.txtAddress.Size = new System.Drawing.Size(506, 32);
             this.txtAddress.TabIndex = 41;
             // 
             // lblAddress
@@ -381,12 +393,12 @@
             // 
             // selectFile
             // 
-            this.selectFile.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.selectFile.Location = new System.Drawing.Point(559, 166);
+            this.selectFile.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.selectFile.Location = new System.Drawing.Point(197, 609);
             this.selectFile.Name = "selectFile";
-            this.selectFile.Size = new System.Drawing.Size(146, 49);
+            this.selectFile.Size = new System.Drawing.Size(167, 49);
             this.selectFile.TabIndex = 53;
-            this.selectFile.Text = "Upload File Donors";
+            this.selectFile.Text = "Choose File";
             this.selectFile.UseVisualStyleBackColor = false;
             this.selectFile.Click += new System.EventHandler(this.selectFile_Click);
             // 
@@ -399,18 +411,6 @@
             this.pictureBoxProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxProfilePicture.TabIndex = 26;
             this.pictureBoxProfilePicture.TabStop = false;
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Image = global::BloodBank_App.Properties.Resources.exit;
-            this.pictureBoxClose.Location = new System.Drawing.Point(1587, 9);
-            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(50, 48);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxClose.TabIndex = 1;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // frmDonors
             // 
@@ -454,9 +454,9 @@
             this.Load += new System.EventHandler(this.frmDonors_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDonors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfilePicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,9 +1,11 @@
 ﻿using BloodBankManagementSystem.BLL;
+using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -311,6 +313,38 @@ namespace BloodBankManagementSystem.DAL
             }
 
             return dt;
+        }
+        public void ExportToExcel()
+        {
+            try
+            {
+                // Lấy dữ liệu từ database
+                DataTable dtExport = Select();
+
+                // Tạo đối tượng ExcelPackage
+                using (ExcelPackage excelPackage = new ExcelPackage())
+                {
+                    // Tạo một bảng dữ liệu Excel từ bảng dữ liệu xuất
+                    ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Donors");
+                    worksheet.Cells["A1"].LoadFromDataTable(dtExport, true);
+
+                    // Lưu file Excel
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                    saveFileDialog.FileName = "DonorsData";
+
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        FileInfo excelFile = new FileInfo(saveFileDialog.FileName);
+                        excelPackage.SaveAs(excelFile);
+                        MessageBox.Show("Exported to Excel successfully!", "Export Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         #endregion
     }

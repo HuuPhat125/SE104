@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
+using System.IO;
 
 namespace BloodBankManagementSystem.UI
 {
@@ -102,5 +104,11 @@ namespace BloodBankManagementSystem.UI
             DataTable dt = dal.Select();
             dgvDonors.DataSource = dt;
         }
-    }
+
+        private void exportExcelFileButton_Click(object sender, EventArgs e)
+        {
+            dal.ExportToExcel();
+        }
+        
+    }   
 }
